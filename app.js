@@ -39,6 +39,7 @@ function toggleFavourite(id) {
 
   localStorage.setItem("leclew-favourites", JSON.stringify(saved));
   renderDrivers();
+  return true;
 }
 
 function driverCard(driver) {
