@@ -8,94 +8,75 @@
 </head>
 <body>
 
-    <header class="navbar">
-        <a href="#home" class="logo">LECLEW<span>.</span></a>
+<header class="navbar">
+    <a href="#home" class="logo">LECLEW<span>.</span></a>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#drivers">DRIVERS</a>
+        <a href="#teams">TEAMS</a>
+        <a href="#about">ABOUT</a>
+    </nav>
+    <span class="season">2026 SEASON</span>
+</header>
 
-        <nav>
-            <a href="#home">HOME</a>
-            <a href="#drivers">DRIVERS</a>
-            <a href="#teams">TEAMS</a>
-            <a href="#about">ABOUT</a>
-        </nav>
-    </header>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">THE WORLD OF MOTORSPORT</p>
+        <h1>BUILT FOR<br><span>THE FAST.</span></h1>
+        <p>Discover the drivers, legendary teams and stories
+        that make Formula 1 extraordinary.</p>
+        <a class="btn" href="#drivers">EXPLORE THE GRID ↗</a>
+    </div>
+    <div class="hero-watermark">LEC</div>
+    <div class="hero-bottom">PASSION. PRECISION. SPEED.</div>
+</section>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <p class="tagline">THE ULTIMATE MOTORSPORT EXPERIENCE</p>
+<div class="ticker">
+    <span>FULL THROTTLE</span> •
+    <span>PURE ADRENALINE</span> •
+    <span>RACING NEVER STOPS</span> •
+    <span>FULL THROTTLE</span>
+</div>
 
-            <h1>BUILT FOR<br><span>THE FAST.</span></h1>
+<section class="section" id="drivers">
+    <p class="eyebrow">THE PEOPLE BEHIND THE SPEED</p>
+    <h2>THE <span>DRIVERS.</span></h2>
 
-            <p class="description">
-                Speed. Precision. Passion.
-                Explore the drivers, teams and stories
-                that define Formula 1.
-            </p>
+    <div class="filters">
+        <input id="driverSearch" type="search"
+        placeholder="Search drivers or teams...">
 
-            <a href="#drivers" class="btn">
-                EXPLORE THE GRID →
-            </a>
-        </div>
+        <select id="teamFilter">
+            <option value="all">All teams</option>
+        </select>
+    </div>
 
-        <div class="hero-label">
-            PASSION NEVER BRAKES.
-        </div>
-    </section>
+    <p class="result-count" id="driverCount"></p>
+    <div class="driver-grid" id="driverGrid"></div>
+</section>
 
-    <section class="drivers" id="drivers">
-        <p class="tagline">THE PEOPLE BEHIND THE SPEED</p>
-        <h2>MEET THE <span>DRIVERS.</span></h2>
+<section class="section teams-section" id="teams">
+    <p class="eyebrow">THE MACHINES AND THE PEOPLE</p>
+    <h2>THE <span>CONSTRUCTORS.</span></h2>
+    <div class="team-grid" id="teamGrid"></div>
+</section>
 
-        <div class="driver-grid">
-            <div class="driver-card">
-                <h3>CHARLES LECLERC</h3>
-                <p>MONACO · FERRARI</p>
-            </div>
+<section class="about" id="about">
+    <p class="eyebrow">WELCOME TO LECLEW</p>
+    <h2>MORE THAN<br>JUST A <span>RACE.</span></h2>
+    <p>
+        LECLEW is an independent fan-made destination
+        celebrating the speed, competition, technology
+        and personalities of Formula 1.
+    </p>
+</section>
 
-            <div class="driver-card">
-                <h3>LEWIS HAMILTON</h3>
-                <p>GREAT BRITAIN · FERRARI</p>
-            </div>
+<footer>
+    <a href="#home" class="logo">LECLEW<span>.</span></a>
+    <p>MADE FOR THE LOVE OF RACING.</p>
+    <p class="copyright">© 2026 LECLEW · INDEPENDENT FAN PROJECT</p>
+</footer>
 
-            <div class="driver-card">
-                <h3>LANDO NORRIS</h3>
-                <p>GREAT BRITAIN · MCLAREN</p>
-            </div>
-
-            <div class="driver-card">
-                <h3>MAX VERSTAPPEN</h3>
-                <p>NETHERLANDS · RED BULL</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="teams" id="teams">
-        <p class="tagline">THE MACHINES AND THE PEOPLE</p>
-        <h2>THE CONSTRUCTORS<span>.</span></h2>
-
-        <div class="team-grid">
-            <div>SCUDERIA FERRARI</div>
-            <div>MERCEDES</div>
-            <div>MCLAREN</div>
-            <div>RED BULL RACING</div>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <p class="tagline">WELCOME TO LECLEW</p>
-        <h2>MORE THAN<br>JUST A <span>RACE.</span></h2>
-        <p>
-            A destination for those who live and breathe
-            motorsport. Discover the personalities,
-            teams and passion behind racing.
-        </p>
-    </section>
-
-    <footer>
-        <h2>LECLEW<span>.</span></h2>
-        <p>MADE FOR THE LOVE OF RACING.</p>
-        <p>© 2026 LECLEW · FAN-MADE PROJECT</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
