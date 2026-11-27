@@ -1,82 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LECLEW | Racing World</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LECLEW | Racing World</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="navbar">
-    <a href="#home" class="logo">LECLEW<span>.</span></a>
-    <nav>
-        <a href="#home">HOME</a>
-        <a href="#drivers">DRIVERS</a>
-        <a href="#teams">TEAMS</a>
-        <a href="#about">ABOUT</a>
-    </nav>
-    <span class="season">2026 SEASON</span>
-</header>
-
-<section class="hero" id="home">
-    <div class="hero-content">
-        <p class="eyebrow">THE WORLD OF MOTORSPORT</p>
-        <h1>BUILT FOR<br><span>THE FAST.</span></h1>
-        <p>Discover the drivers, legendary teams and stories
-        that make Formula 1 extraordinary.</p>
-        <a class="btn" href="#drivers">EXPLORE THE GRID ↗</a>
-    </div>
-    <div class="hero-watermark">LEC</div>
-    <div class="hero-bottom">PASSION. PRECISION. SPEED.</div>
-</section>
-
-<div class="ticker">
-    <span>FULL THROTTLE</span> •
-    <span>PURE ADRENALINE</span> •
-    <span>RACING NEVER STOPS</span> •
-    <span>FULL THROTTLE</span>
-</div>
-
-<section class="section" id="drivers">
-    <p class="eyebrow">THE PEOPLE BEHIND THE SPEED</p>
-    <h2>THE <span>DRIVERS.</span></h2>
-
-    <div class="filters">
-        <input id="driverSearch" type="search"
-        placeholder="Search drivers or teams...">
-
-        <select id="teamFilter">
-            <option value="all">All teams</option>
-        </select>
-    </div>
-
-    <p class="result-count" id="driverCount"></p>
-    <div class="driver-grid" id="driverGrid"></div>
-</section>
-
-<section class="section teams-section" id="teams">
-    <p class="eyebrow">THE MACHINES AND THE PEOPLE</p>
-    <h2>THE <span>CONSTRUCTORS.</span></h2>
-    <div class="team-grid" id="teamGrid"></div>
-</section>
-
-<section class="about" id="about">
-    <p class="eyebrow">WELCOME TO LECLEW</p>
-    <h2>MORE THAN<br>JUST A <span>RACE.</span></h2>
-    <p>
-        LECLEW is an independent fan-made destination
-        celebrating the speed, competition, technology
-        and personalities of Formula 1.
-    </p>
-</section>
-
-<footer>
-    <a href="#home" class="logo">LECLEW<span>.</span></a>
-    <p>MADE FOR THE LOVE OF RACING.</p>
-    <p class="copyright">© 2026 LECLEW · INDEPENDENT FAN PROJECT</p>
-</footer>
-
-<script src="script.js"></script>
+<body data-page="home">
+<header id="navbar"></header>
+<main id="app"></main>
+<footer id="footer"></footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
