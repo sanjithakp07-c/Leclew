@@ -1,0 +1,263 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #090909;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #090909;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.logo span,
+footer span {
+    color: #e10600;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #e10600;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 570px;
+    padding: 120px 10%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+        linear-gradient(90deg, #090909, #191919);
+    border-bottom: 3px solid #e10600;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "F1";
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 300px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.035);
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.tagline,
+.section-tag {
+    color: #e10600;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 75px;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #e10600;
+}
+
+.description {
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #e10600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #e10600;
+}
+
+.hero-label {
+    position: absolute;
+    bottom: 25px;
+    right: 8%;
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+/* Drivers Section */
+
+.drivers,
+.teams,
+.about {
+    padding: 90px 8%;
+}
+
+.drivers h2,
+.teams h2,
+.about h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.driver-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.driver-card {
+    background: #191919;
+    padding: 65px 25px;
+    border-left: 3px solid #e10600;
+    transition: 0.3s;
+}
+
+.driver-card:hover {
+    transform: translateY(-7px);
+    background: #252525;
+}
+
+.driver-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.driver-card p {
+    font-size: 11px;
+    color: #aaa;
+    letter-spacing: 2px;
+}
+
+/* Teams Section */
+
+.teams {
+    background: #141414;
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.team-list div {
+    padding: 25px;
+    background: #222;
+    font-weight: bold;
+    border-bottom: 2px solid #e10600;
+}
+
+/* About Section */
+
+.about p:last-child {
+    color: #aaa;
+    max-width: 650px;
+    line-height: 1.9;
+}
+
+/* Footer */
+
+footer {
+    background: #050505;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #777;
+    font-size: 11px;
+    margin-top: 12px;
+    letter-spacing: 2px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 100px 7%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero::after {
+        font-size: 180px;
+    }
+
+    .driver-container,
+    .team-list {
+        grid-template-columns: 1fr;
+    }
+
+    .drivers,
+    .teams,
+    .about {
+        padding: 65px 7%;
+    }
+
+}
